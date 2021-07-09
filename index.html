@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Main</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link href="." rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="inner">
+          <div class="header-logo"><a href="/"><img src="img/img1.png" alt="img1"></a></div>
+          <div class="header-menu"><a class="basket" href="/">
+              <svg class="icon icon_basket">
+                <use xlink:href="img/sprite.svg#icon_basket"></use>
+              </svg></a><a class="bell" href="/">
+              <svg class="icon icon_bell">
+                <use xlink:href="img/sprite.svg#icon_bell"></use>
+              </svg></a><a class="profile" href="/"><img src="img/img2.png" alt="img2"></a>
+            <div class="header-menu-mb"><span></span><span></span><span></span></div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="main-page">
+          <div class="inner">
+            <div class="sidebar">
+              <div class="sidebar-item active">
+                <svg class="icon icon_catalog">
+                  <use xlink:href="img/sprite.svg#icon_catalog"></use>
+                </svg>Каталог
+              </div>
+              <div class="sidebar-item">
+                <svg class="icon icon_my">
+                  <use xlink:href="img/sprite.svg#icon_my"></use>
+                </svg>Мои заказы
+              </div>
+              <div class="sidebar-item">
+                <svg class="icon icon_gear">
+                  <use xlink:href="img/sprite.svg#icon_gear"></use>
+                </svg>Настройки
+              </div>
+            </div>
+            <form action="action.php" method="post">
+              <div class="filter"><a class="filter-back" href="/">назад</a>
+                <div class="filter-title_reset">
+                  <div class="filter-title_reset-title">Столешницы</div><a class="filter-title_reset-reset" href="/">сбросить</a>
+                </div>
+                <div class="filter-characterization">
+                  <div class="filter-characterization-title">Укажите характеристики изделия:</div>
+                  <div class="filter-characterization-type">
+                    <div class="filter-characterization-type-descr">Тип столешницы</div>
+                    <div class="select">
+                      <div class="select__header"><span class="select__current">Профстандарт</span>
+                        <svg class="icon icon_arrow_bottom">
+                          <use xlink:href="img/sprite.svg#icon_arrow_bottom"></use>
+                        </svg>
+                      </div>
+                      <div class="select__body">
+                        <div class="select__item">Профстандарт</div>
+                        <div class="select__item">Ещестандарт</div>
+                        <div class="select__item">Нестандарт</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter-characterization-checkbox">
+                    <input id="check1" type="checkbox">
+                    <label class="check" for="check1"></label>
+                    <label class="text" for="check1">Нестандартные параметры</label>
+                  </div>
+                  <div class="filter-characterization-size">
+                    <div class="filter-characterization-size-descr">Размер, мм</div>
+                    <div class="select">
+                      <div class="select__header"><span class="select__current">3600*600*40</span>
+                        <svg class="icon icon_arrow_bottom">
+                          <use xlink:href="img/sprite.svg#icon_arrow_bottom"></use>
+                        </svg>
+                      </div>
+                      <div class="select__body">
+                        <div class="select__item">3600*600*40</div>
+                        <div class="select__item">3600*500*30</div>
+                        <div class="select__item">3600*400*20</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter-characterization-blockage">
+                    <div class="filter-characterization-blockage-descr">Завал</div>
+                    <div class="select">
+                      <div class="select__header"><span class="select__current">R3</span>
+                        <svg class="icon icon_arrow_bottom">
+                          <use xlink:href="img/sprite.svg#icon_arrow_bottom"></use>
+                        </svg>
+                      </div>
+                      <div class="select__body">
+                        <div class="select__item">R3</div>
+                        <div class="select__item">R2</div>
+                        <div class="select__item">R1</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter-characterization-lot">
+                    <div class="filter-characterization-lot-descr">Кол-во завалов</div>
+                    <div class="select">
+                      <div class="select__header"><span class="select__current">0</span>
+                        <svg class="icon icon_arrow_bottom_gray">
+                          <use xlink:href="img/sprite.svg#icon_arrow_bottom_gray"></use>
+                        </svg>
+                      </div>
+                      <div class="select__body">
+                        <div class="select__item">0</div>
+                        <div class="select__item">1</div>
+                        <div class="select__item">2</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter-decor">
+                  <div class="filter-decor-title">Выберите декор:</div>
+                  <div class="filter-decor-descr">Недавние декоры:</div>
+                  <div class="filter-decor-slider swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="filter-decor-slider-item active"><img src="img/img4.png" alt="">
+                          <div class="filter-decor-slider-item-text">Дуб классический (5270/FL)</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="filter-decor-slider-item"><img src="img/img4.png" alt="">
+                          <div class="filter-decor-slider-item-text">Дуб классический (5270/FL)</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="filter-decor-slider-item"><img src="img/img4.png" alt="">
+                          <div class="filter-decor-slider-item-text">Дуб классический (5270/FL)</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+                  <div class="filter-decor-search">
+                    <div class="filter-decor-search-descr">Поиск</div>
+                    <input type="search" placeholder="Введите название или артикул">
+                  </div>
+                  <div class="filter-decor-category">
+                    <div class="filter-decor-category-descr">Категория декора</div>
+                    <div class="select">
+                      <div class="select__header"><span class="select__current">4</span>
+                        <svg class="icon icon_arrow_bottom">
+                          <use xlink:href="img/sprite.svg#icon_arrow_bottom"></use>
+                        </svg>
+                      </div>
+                      <div class="select__body">
+                        <div class="select__item">4</div>
+                        <div class="select__item">3</div>
+                        <div class="select__item">2</div>
+                        <div class="select__item">1</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter-decor-surfaces">
+                    <div class="filter-decor-surfaces-descr">Тип поверхности</div>
+                    <div class="select">
+                      <div class="select__header"><span class="select__current">Матовая</span>
+                        <svg class="icon icon_arrow_bottom">
+                          <use xlink:href="img/sprite.svg#icon_arrow_bottom"></use>
+                        </svg>
+                      </div>
+                      <div class="select__body">
+                        <div class="select__item">Матовая</div>
+                        <div class="select__item">Глянцевая</div>
+                        <div class="select__item">Мраморная</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter-decor-type_decor">
+                    <div class="filter-decor-type_decor-descr">Тип декора</div>
+                    <div class="select">
+                      <div class="select__header"><span class="select__current">Мрамор</span>
+                        <svg class="icon icon_arrow_bottom">
+                          <use xlink:href="img/sprite.svg#icon_arrow_bottom"></use>
+                        </svg>
+                      </div>
+                      <div class="select__body">
+                        <div class="select__item">Мрамор</div>
+                        <div class="select__item">Дерево</div>
+                        <div class="select__item">Вибраниум</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter-listing">
+                  <div class="filter-listing-inf">Найдено: 32 шт.</div>
+                  <div class="filter-listing-block"><a class="filter-listing-block-item" href="/"><img src="img/img5.png" alt="img5">
+                      <div class="filter-listing-block-item-descr">Дуб классический</div>
+                      <div class="filter-listing-block-item-number">5270/FL</div></a><a class="filter-listing-block-item" href="/"><img src="img/img6.png" alt="img6">
+                      <div class="filter-listing-block-item-descr">Ломбардия</div>
+                      <div class="filter-listing-block-item-number">2348/soft</div></a><a class="filter-listing-block-item" href="/"><img src="img/img7.png" alt="img7">
+                      <div class="filter-listing-block-item-descr">Crystal Marble</div>
+                      <div class="filter-listing-block-item-number">8040/soft</div></a><a class="filter-listing-block-item" href="/"><img src="img/img8.png" alt="img8">
+                      <div class="filter-listing-block-item-descr">Паладина</div>
+                      <div class="filter-listing-block-item-number">357/1</div></a><a class="filter-listing-block-item" href="/"><img src="img/img5.png" alt="img5">
+                      <div class="filter-listing-block-item-descr">Дуб классический</div>
+                      <div class="filter-listing-block-item-number">5270/FL</div></a><a class="filter-listing-block-item" href="/"><img src="img/img6.png" alt="img6">
+                      <div class="filter-listing-block-item-descr">Ломбардия</div>
+                      <div class="filter-listing-block-item-number">2348/soft</div></a><a class="filter-listing-block-item" href="/"><img src="img/img7.png" alt="img7">
+                      <div class="filter-listing-block-item-descr">Crystal Marble</div>
+                      <div class="filter-listing-block-item-number">8040/soft</div></a><a class="filter-listing-block-item" href="/"><img src="img/img8.png" alt="img8">
+                      <div class="filter-listing-block-item-descr">Паладина</div>
+                      <div class="filter-listing-block-item-number">357/1</div></a>
+                  </div>
+                  <div class="filter-listing-slider swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><a class="filter-listing-slider-item" href="/"><img src="img/img5.png" alt="img5">
+                          <div class="filter-listing-slider-item-descr">Дуб классический</div>
+                          <div class="filter-listing-slider-item-number">5270/FL</div></a></div>
+                      <div class="swiper-slide"><a class="filter-listing-slider-item" href="/"><img src="img/img6.png" alt="img6">
+                          <div class="filter-listing-slider-item-descr">Ломбардия</div>
+                          <div class="filter-listing-slider-item-number">2348/soft</div></a></div>
+                      <div class="swiper-slide"><a class="filter-listing-slider-item" href="/"><img src="img/img7.png" alt="img7">
+                          <div class="filter-listing-slider-item-descr">Crystal Marble</div>
+                          <div class="filter-listing-slider-item-number">8040/soft</div></a></div>
+                      <div class="swiper-slide"><a class="filter-listing-slider-item" href="/"><img src="img/img8.png" alt="img8">
+                          <div class="filter-listing-slider-item-descr">Паладина</div>
+                          <div class="filter-listing-slider-item-number">357/1</div></a></div>
+                      <div class="swiper-slide"><a class="filter-listing-slider-item" href="/"><img src="img/img5.png" alt="img5">
+                          <div class="filter-listing-slider-item-descr">Дуб классический</div>
+                          <div class="filter-listing-slider-item-number">5270/FL</div></a></div>
+                      <div class="swiper-slide"><a class="filter-listing-slider-item" href="/"><img src="img/img6.png" alt="img6">
+                          <div class="filter-listing-slider-item-descr">Ломбардия</div>
+                          <div class="filter-listing-slider-item-number">2348/soft</div></a></div>
+                      <div class="swiper-slide"><a class="filter-listing-slider-item" href="/"><img src="img/img7.png" alt="img7">
+                          <div class="filter-listing-slider-item-descr">Crystal Marble</div>
+                          <div class="filter-listing-slider-item-number">8040/soft</div></a></div>
+                      <div class="swiper-slide"><a class="filter-listing-slider-item" href="/"><img src="img/img8.png" alt="img8">
+                          <div class="filter-listing-slider-item-descr">Паладина</div>
+                          <div class="filter-listing-slider-item-number">357/1</div></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="preview">
+                <div class="preview-title">Превью заказа:</div>
+                <div class="preview-block">
+                  <div class="preview-block-img"><img src="img/img3.png" alt="img3"></div>
+                  <div class="preview-block-descr">Дуб классический</div>
+                  <div class="preview-block-number">5270/FL</div>
+                  <div class="preview-block-parameters">
+                    <div class="preview-block-parameters-item">Тип столешницы:
+                      <p>“Профстандарт”</p>
+                    </div>
+                    <div class="preview-block-parameters-item">Размер:
+                      <p>3050*1200*38 (нестандарт)</p>
+                    </div>
+                    <div class="preview-block-parameters-item">Завал:
+                      <p>R9</p>
+                    </div>
+                    <div class="preview-block-parameters-item">Категория декора:
+                      <p>4</p>
+                    </div>
+                    <div class="preview-block-parameters-item">Тип поверхности:
+                      <p>Матовая</p>
+                    </div>
+                    <div class="preview-block-parameters-item">Тип декора:
+                      <p>Дерево</p>
+                    </div>
+                    <div class="preview-block-parameters-item">Приблизиительное время изготовления:
+                      <p>6 дней</p>
+                    </div>
+                  </div>
+                  <div class="preview-block-count">
+                    <div class="preview-block-count-number number"><span class="minus">-</span>
+                      <input type="text" value="1"><span class="plus">+</span>
+                    </div>
+                    <div class="preview-block-count-cost">129000₽
+                      <div class="preview-block-count-cost-red">160000₽</div>
+                    </div>
+                  </div>
+                  <div class="preview-block-btn_add">
+                    <input type="submit" value="Добавить в корзину">
+                  </div>
+                  <div class="preview-block-btn_save">
+                    <input type="submit" value="сохранить как шаблон">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="inner">
+          <div class="footer-logo"><a href="/">
+              <svg class="icon icon_logo">
+                <use xlink:href="img/sprite.svg#icon_logo"></use>
+              </svg></a></div>
+          <div class="footer-menu"></div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.9/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
+    <script src="js/vendors.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
